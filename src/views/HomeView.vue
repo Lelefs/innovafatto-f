@@ -1,12 +1,40 @@
 <template>
-  <div class="home mt-16 d-flex flex-column gap-5">
-    <v-img class="home__img" :src="require('@/assets/casamentos/ensaio-1.png')" alt="Imagem casal" aspect-ratio="1" />
+  <div class="home mt-16">
+    <v-row>
+      <v-col>
+        <v-img
+          class="home__img mx-auto"
+          max-width="1280"
+          max-height="500"
+          :src="require('@/assets/casamentos/ensaio-1.png')"
+          alt="Imagem casal"
+        />
+      </v-col>
+    </v-row>
 
-    <h1>Ajude no projeto dos sonhos de Lucas & Julia</h1>
+    <v-row>
+      <v-col>
+        <h1>Ajude no projeto dos sonhos de Lucas & Julia</h1>
+      </v-col>
+    </v-row>
 
-    <h2>Cozinha completa</h2>
+    <v-row>
+      <v-col>
+        <h2>Cozinha completa</h2>
+      </v-col>
+    </v-row>
 
-    <v-divider></v-divider>
+    <v-row>
+      <v-col>
+        <v-divider></v-divider>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col cols="12" md="6"> ARRECADADO </v-col>
+
+      <v-col cols="12" md="6"> CONTRIBUIR </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -18,18 +46,22 @@ export default {
 
 <style lang="scss">
 .home {
+  background: #f0efed;
+
   h1,
   h2 {
     font-size: 35px;
     text-align: center;
     letter-spacing: 0.02em;
     color: #454545;
+
+    @media only screen and (max-width: 720px) {
+      font-size: 20px;
+    }
   }
 }
 
 .home__img {
   width: 100%;
-  height: 100%;
-  max-height: 250px;
 }
 </style>
