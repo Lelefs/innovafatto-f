@@ -2,7 +2,7 @@
   <nav class="d-flex justify-space-between align-center gap-4">
     <img alt="Vue logo" src="../assets/logo.png" />
 
-    <v-btn text color="#333333">
+    <v-btn text color="gray2" class="header-button__icon font-weight-bold">
       <v-icon left> mdi-currency-usd </v-icon>
       Contribuir
     </v-btn>
@@ -16,17 +16,13 @@ export default {
 </script>
 
 <style lang="scss">
-.header__link {
-  font-size: 18px;
-  letter-spacing: 0.02em;
-  color: #333333 !important;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.2s;
-
-  &:hover {
-    text-decoration: underline;
-    filter: brightness(0.1);
+.header-button__icon {
+  .v-icon {
+    height: 30px !important;
+    width: 30px !important;
+    font-size: 20px !important;
+    border-radius: 50%;
+    background: #f1ddc9;
   }
 }
 </style>

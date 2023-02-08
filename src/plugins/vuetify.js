@@ -13,6 +13,10 @@ const opts = {
       light: {
         primary: '#F08824',
         background: '#F7F6F4',
+        brown1: '#483B30',
+        gray1: '#454545',
+        gray2: '#333',
+        gray3: '#575757',
       },
     },
   },

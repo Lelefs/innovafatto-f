@@ -14,13 +14,13 @@
 
     <v-row>
       <v-col>
-        <h1>Ajude no projeto dos sonhos de Lucas & Julia</h1>
+        <h1 class="gray1--text">Ajude no projeto dos sonhos de Lucas & Julia</h1>
       </v-col>
     </v-row>
 
     <v-row>
       <v-col>
-        <h2>Cozinha completa</h2>
+        <h2 class="gray1--text">Cozinha completa</h2>
       </v-col>
     </v-row>
 
@@ -31,9 +31,12 @@
     </v-row>
 
     <v-row>
-      <v-col cols="12" md="6"> ARRECADADO </v-col>
+      <ArrecadadoComponent />
 
-      <v-col cols="12" md="6"> CONTRIBUIR </v-col>
+      <v-col cols="12" md="6" class="d-flex justify-center align-center flex-column">
+        <v-btn color="primary" width="329" height="50" class="font-weight-bold mb-3"> Contribuir </v-btn>
+        <v-btn color="primary" outlined width="329" height="50" class="font-weight-bold"> Compartilhar </v-btn>
+      </v-col>
     </v-row>
   </div>
 </template>
@@ -41,6 +44,10 @@
 <script>
 export default {
   name: 'HomeView',
+
+  components: {
+    ArrecadadoComponent: () => import('@/components/ArrecadadoComponent.vue'),
+  },
 };
 </script>
 
@@ -50,13 +57,12 @@ export default {
 
   h1,
   h2 {
-    font-size: 35px;
+    font-size: 2.1875rem;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #454545;
 
     @media only screen and (max-width: 720px) {
-      font-size: 20px;
+      font-size: 1.25rem;
     }
   }
 }
