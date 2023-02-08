@@ -4,7 +4,7 @@
 
     <h3 class="primary--text">R$ 11.000,00</h3>
 
-    <v-progress-linear v-model="power" class="my-4" rounded color="primary" height="10"></v-progress-linear>
+    <v-progress-linear v-model="percentage" class="my-4" rounded color="primary" height="10"></v-progress-linear>
 
     <p class="text--secondary">Meta R$ 45.000,00</p>
   </v-col>
@@ -15,7 +15,7 @@ export default {
   name: 'ArrecadadoComponent',
 
   data: () => ({
-    power: 50,
+    percentage: Math.random() * 100,
   }),
 };
 </script>
@@ -39,6 +39,10 @@ export default {
     font-size: 1.25rem;
     line-height: 2.5rem;
     letter-spacing: 0.02em;
+  }
+
+  .v-progress-linear {
+    max-width: 420px;
   }
 }
 </style>

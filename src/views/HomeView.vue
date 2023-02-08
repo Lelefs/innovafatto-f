@@ -33,7 +33,7 @@
     <v-row>
       <ArrecadadoComponent />
 
-      <v-col cols="12" md="6" class="d-flex justify-center align-center flex-column">
+      <v-col cols="12" md="6" class="px-5 d-flex justify-center align-end flex-column">
         <v-btn color="primary" width="329" height="50" class="font-weight-bold mb-3"> Contribuir </v-btn>
         <v-btn color="primary" outlined width="329" height="50" class="font-weight-bold"> Compartilhar </v-btn>
       </v-col>
