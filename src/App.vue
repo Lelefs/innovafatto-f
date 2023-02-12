@@ -4,16 +4,18 @@
       <HeaderComponent />
       <router-view />
     </v-container>
+    <FooterComponent />
   </v-app>
 </template>
 
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
 
 export default {
   name: 'App',
 
-  components: { HeaderComponent },
+  components: { HeaderComponent, FooterComponent },
 
   computed: {
     theme() {
